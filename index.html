@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Font -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap');
+  </style>
+  <!-- Icons -->
+  <script src="https://kit.fontawesome.com/d3dacf0272.js" crossorigin="anonymous"></script>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <!-- title -->
+  <title>Frontend Mentor | Fylo landing page with two column layout</title>
+  
+  <!-- css -->
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <nav>
+        <img src="./images/logo.svg" alt="logo">
+
+        <ul>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Sign In</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main>
+      <!-- All your files in one secure -->
+      <section>
+        <div class="left">
+          <div>
+            <h1>
+              All your files in one secure location, accessible anywhere.
+            </h1>
+    
+            <p>
+              Fylo stores your most important files in one secure location. 
+              Access them wherever you need, share and collaborate with friends, 
+              family, and co-workers.
+            </p>
+
+            <div class="input-section">
+              <input type="text" placeholder="Enter your email...">
+              <input type="button" value="Get Started">
+            </div>
+          </div>
+
+        </div>
+
+        <div class="right">
+          <img src="./images/illustration-1.svg" alt="illustration-1">
+        </div>
+      </section>
+      
+      <!-- Wave image -->
+      <img src="./images/bg-curve-desktop.svg" alt="curve" class="waves">
+      
+      <!-- Stay productive, wherever you are -->
+      <section>
+          <div class="left">
+            <h1>Stay productive, wherever you are</h1>
+
+            <div class="description">
+              <p>
+                Never let location be an issue when accessing your files. Fylo has you 
+                covered for all of your file storage needs.
+              </p>
+    
+              <p>
+                Securely share files and folders with friends, family and colleagues for 
+                live collaboration. No email attachments required!
+              </p>
+              
+              <div class="link">
+                <span onclick="hide()">See how Fylo works <i class="fa-solid fa-arrow-right"></i> </span>   
+              </div>
+  
+              <article id="hideArticle">
+                <img src="./images/icon-quotes.svg" alt="" class="quotes">
+                
+                <p>
+                  Fylo has improved our team productivity by an order of magnitude. Since 
+                  making the switch our team has become a well-oiled collaboration machine.
+                </p>
+  
+                <div class="avatar-box">
+                  <img src="./images/avatar-testimonial.jpg" alt="avatar">
+                  
+                  <div class="name">
+                    <span>Kyle Burton</span>
+                    
+                    <span>Founder & CEO, Huddle</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+            
+          </div>
+
+          <div class="right">
+            <img src="./images/illustration-2.svg" alt="illustration-2" class="illustration2">
+          </div>
+
+
+      </section>
+
+      <!-- Get early access today -->
+      <section>
+        <div class="left">
+          <h1>Get early access today</h1>
+          <p>
+            It only takes a minute to sign up and our free starter tier is extremely generous. 
+            If you have any questions, our support team would be happy to help you.        
+          </p>
+        </div>
+
+        <div class="right">
+            <input type="text" placeholder="email@example.com">
+            <input type="button" value="Get Started For Free">
+            
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <img src="./images/logo.svg" alt="logo">
+      <div class="columns">
+        <div class="one">
+          <ul>
+            <li><img src="./images/icon-phone.svg" alt="icon-phone"> &nbsp;Phone: +1-543-123-4567</li>
+            <li><img src="./images/icon-email.svg" alt="icon-email"> &nbsp;example@fylo.com</li>
+          </ul>
+        </div>
+  
+        <div class="two">
+          <ul>
+            <li><a href="#">About Us</a> </li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+  
+        <div class="three">
+          <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Privacy</a></li>
+          </ul>
+        </div>
+  
+        <div class="four">
+          <ul>
+            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+          </ul>
+          
+          
+          
+        </div>
+      </div>
+      
+    
+    </footer>
+  </div>
+
+  <script>
+
+    var hideArticle = document.getElementById("hideArticle");
+
+    hideArticle.style.opacity = "0";
+
+    function hide(){
+      
+
+      if(hideArticle.style.opacity == "1"){
+        hideArticle.style.opacity = "0"
+      }else{
+        hideArticle.style.opacity = "1"
+      }
+    }
+  </script>
+</body>
+</html>
